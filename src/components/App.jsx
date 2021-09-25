@@ -1,6 +1,6 @@
 import "./App.css";
 import Header from "./Header/Header";
-import Search from "./Search/Search";
+// import Search from "./Search/Search";
 import Footer from "./Footer/Footer";
 
 function App() {
@@ -8,7 +8,7 @@ function App() {
 		<div className="App">
 			<Header />
 			<Footer />
-			<Search />
+			{/* <Search /> */}
 		</div>
 	);
 }
