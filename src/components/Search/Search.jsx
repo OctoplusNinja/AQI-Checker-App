@@ -29,6 +29,7 @@ function Search() {
             console.log(resP.data.list[0].components);
           });
       })
+
       .catch((err) => {
         //TODO: Error handiling
       });
