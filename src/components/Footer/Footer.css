@@ -2,8 +2,6 @@
 	width: 100%;
 	border-top: 5px solid #1bc47d;
 	height: 300px;
-	position: fixed;
-	bottom: 0;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -15,7 +13,7 @@
 	height: 200px;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-around;
+	justify-content: space-between;
 	align-items: center;
 }
 
@@ -41,7 +39,6 @@ img.foot-icon {
 .footer-desc {
 	font-weight: 500;
 	font-size: 20px;
-	line-height: 37px;
 	display: flex;
 	align-items: center;
 	text-align: center;

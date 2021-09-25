@@ -1,0 +1,20 @@
+p {
+	margin: 0;
+}
+
+.aboutc {
+	width: 90%;
+	padding-bottom: 50px;
+	margin: 0 auto;
+}
+
+.ptitle {
+	font-weight: 800;
+	font-size: 40px;
+	margin: 49px 0 10px 0;
+}
+
+.pdesc {
+	font-weight: 600;
+	font-size: 20px;
+}
