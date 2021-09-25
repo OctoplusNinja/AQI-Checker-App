@@ -5,6 +5,7 @@ const BaseURL = "http://api.openweathermap.org/data/2.5";
 const API_KEY = "d9279a9eae007036c2304eee80724d77";
 
 function Search() {
+<<<<<<< HEAD
 	const [city, setCity] = useState("");
 	const [val, setVal] = useState("");
 
