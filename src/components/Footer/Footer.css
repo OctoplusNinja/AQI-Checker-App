@@ -1,13 +1,84 @@
-/* .footer {
-    
-} */
+.footer {
+	width: 100%;
+	border-top: 5px solid #1bc47d;
+	height: 300px;
+	position: fixed;
+	bottom: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #000000;
+}
+
+.grp {
+	height: 200px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
 
 a {
+	text-decoration: none;
+}
+
+a.own {
 	text-decoration: underline;
-	color: inherit;
+	color: wheat;
 }
 
 img.gitrepo {
 	width: 357px;
 	height: 100px;
+}
+
+img.foot-icon {
+	width: 20px;
+	height: 20px;
+}
+
+.footer-desc {
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 37px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+}
+
+.footer-title {
+	font-weight: 900;
+	font-size: 50px;
+	display: flex;
+	align-items: center;
+	color: #ffffff;
+	text-shadow: 4px 0px 5px #fed4d4;
+}
+
+.dot {
+	color: #fd5a56;
+}
+
+@media only screen and (max-width: 700px) {
+	.footer {
+		height: 250px;
+	}
+
+	.footer-title {
+		font-size: 40px;
+	}
+
+	img.gitrepo {
+		width: 187.5px;
+		height: 50px;
+	}
+
+	.footer-desc {
+		font-size: 12.5px;
+	}
+	img.foot-icon {
+		width: 12.5px;
+		height: 12.5px;
+	}
 }
