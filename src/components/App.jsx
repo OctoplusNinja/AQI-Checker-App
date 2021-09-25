@@ -2,7 +2,6 @@ import "./App.css";
 import Header from "./Header/Header";
 import Search from "./Search/Search";
 import Footer from "./Footer/Footer";
-import Search from "./Search/Search";
 
 function App() {
 	return (

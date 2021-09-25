@@ -2,10 +2,9 @@ import axios from "axios";
 import React, { useState } from "react";
 
 const BaseURL = "http://api.openweathermap.org/data/2.5";
-const API_KEY = "d9279a9eae007036c2304eee80724d77";
+const API_KEY = process.env.REACT_APP_WEATHER_API_KEY;
 
 function Search() {
-<<<<<<< HEAD
 	const [city, setCity] = useState("");
 	const [val, setVal] = useState("");
 
@@ -25,13 +24,13 @@ function Search() {
 					});
 			})
 			.catch((err) => {
-				//TODO: Error handiling
+				// console.error(err);
 			});
 		console.log(city);
 	}
 	return (
 		<div className="search">
-			<form action="" onSubmit={getLocation}>
+			<form onSubmit={getLocation}>
 				<input
 					type="text"
 					value={city}
