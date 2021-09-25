@@ -7,6 +7,8 @@
 	position: fixed;
 	top: 0;
 	left: 0;
+	background-color: #070c20;
+	border: wheat solid 1px;
 }
 .name {
 	margin-left: 50px;
