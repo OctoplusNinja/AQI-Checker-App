@@ -62,6 +62,12 @@ h1.header-title {
 	.favicon {
 		display: none;
 	}
+	.name {
+		margin-left: 5px;
+	}
+	.about {
+		margin-right: 5px;
+	}
 	.name,
 	.about {
 		display: flex;

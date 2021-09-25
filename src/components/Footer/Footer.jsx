@@ -8,12 +8,18 @@ function Header() {
 		<div className="footer">
 			<div className="grp">
 				<h1 className="footer-title">
-					AQI Checker App<span className="dot">.</span>{" "}
+					AQI Checker App<span className="dot">.</span>
 				</h1>
-				<a href="https://github.com/BlankCoders/AQI-Checker-App" target="_blank" rel="noopener noreferrer"><img className="gitrepo" src={gitrepo} alt="gitrepo" /></a>
+				<a
+					href="https://github.com/BlankCoders/AQI-Checker-App"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					<img className="gitrepo" src={gitrepo} alt="gitrepo" />
+				</a>
 				<p className="footer-desc">
 					&#60;&nbsp;Made with&nbsp;
-					<img src={heart} alt="heart" className="foot-icon" />{" "}
+					<img src={heart} alt="heart" className="foot-icon" />
 					&nbsp;and&nbsp;
 					<img src={computer} alt="heart" className="foot-icon" />
 					&nbsp;by&nbsp;
