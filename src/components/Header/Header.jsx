@@ -6,10 +6,10 @@ function Header() {
 		<div className="header">
 			<div className="name">
 				<img className="favicon" src={favicon} alt="favicon" />
-				<h1>AQI Checker App</h1>
+				<h1 className="header-title">AQI Checker App</h1>
 			</div>
 			<div className="about">
-				<h1>About us</h1>
+				<h1 className="header-title">About us</h1>
 				<img className="favicon" src={aboutus} alt="favicon" />
 			</div>
 		</div>

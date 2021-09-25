@@ -1,12 +1,3 @@
-// import React, { Component } from "react";
-
-// class Search extends React.Component {
-//   constructor(props) {
-//     super(props);
-//     this.state = { username: "" };
-//   }
-// }
-
 import axios from "axios";
 import React, { useState } from "react";
 
@@ -15,6 +6,8 @@ const API_KEY = "d9279a9eae007036c2304eee80724d77";
 
 function Search() {
   const [city, setCity] = useState("");
+  const [val, setVal] = useState("");
+
   function getLocation(e) {
     e.preventDefault();
     axios
@@ -26,10 +19,10 @@ function Search() {
             `${BaseURL}/air_pollution?lat=${coord.lat}&lon=${coord.lon}&appid=${API_KEY}`
           )
           .then((resP) => {
+            setVal(resP.data.list[0].components);
             console.log(resP.data.list[0].components);
           });
       })
-
       .catch((err) => {
         //TODO: Error handiling
       });
@@ -45,6 +38,7 @@ function Search() {
         />
         <button type="submit">Search</button>
       </form>
+      <div>{val.co}</div>
     </div>
   );
 }
