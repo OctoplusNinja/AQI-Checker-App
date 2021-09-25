@@ -2,6 +2,7 @@ div.sexrch {
 	display: flex;
 	align-items: center;
 	justify-items: center;
+	flex-direction: column;
 }
 .search {
 	margin: 30px auto;
@@ -38,4 +39,12 @@ div.sexrch {
 	background-image: url(./../../assets/rxns/search.png);
 	background-size: cover;
 	border-radius: 0px 50px 50px 0px;
+}
+
+.loc {
+	font-weight: 600;
+	font-size: 15px;
+	margin: 10px 0 27px;
+	text-decoration-line: underline;
+	color: #eee69e;
 }
