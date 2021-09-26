@@ -1,3 +1,4 @@
+import Bullet from "../Bullet/Bullet";
 import AQIData from "./Data";
 
 function Details(props) {
@@ -16,6 +17,7 @@ function Details(props) {
 					</p>
 					<img src={AQIData[0]} alt="" width="100px" />
 					<p>Air Quality Index:</p>
+					<Bullet />
 				</div>
 			);
 		}
