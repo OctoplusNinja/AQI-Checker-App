@@ -1,19 +1,24 @@
 import AQIData from "../Details/Data";
+import "./Advice.css";
 
 function Advice(props) {
   if (props.okay) {
     return (
-      <div>
+      <div className="advice">
         <p>
           What you should do according to the Air Quality Index of your chosen
           location?
         </p>
         <img src={AQIData.main[props.AQIIndex].gif} alt="" />
-        <p>{AQIData.main[props.AQIIndex].message}</p>
+        <p className="advice-message">{AQIData.main[props.AQIIndex].message}</p>
       </div>
     );
   } else {
-    return <img src={AQIData.err.gif} alt="" />;
+    return (
+      <div className="advice">
+        <img src={AQIData.err.gif} alt="" />
+      </div>
+    );
   }
 }
 
