@@ -23,7 +23,17 @@ import AQI2 from "../../assets/rxns/two.png";
 import AQI3 from "../../assets/rxns/three.png";
 import AQI4 from "../../assets/rxns/four.png";
 import AQI5 from "../../assets/rxns/five.png";
+import err from "../../assets/rxns/confused.png";
 
-var AQIData = [AQI1, AQI2, AQI3, AQI4, AQI5];
+var AQIData = {
+  main: [
+    { image: AQI1, AQI: "Good" },
+    { image: AQI2, AQI: "Fair" },
+    { image: AQI3, AQI: "Moderate" },
+    { image: AQI4, AQI: "Poor" },
+    { image: AQI5, AQI: "Very Poor" },
+  ],
+  err: { image: err },
+};
 
 export default AQIData;
