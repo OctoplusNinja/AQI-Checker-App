@@ -1,6 +1,6 @@
 import axios from "axios";
 import React, { useState } from "react";
-// import "./Search.css";
+import "./Search.css";
 import Details from "../Details/Details";
 
 const BaseURL = "http://api.openweathermap.org/data/2.5";
