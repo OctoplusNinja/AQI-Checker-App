@@ -43,8 +43,13 @@ function Bullet(props) {
           <p>{props.temp}° C</p>
         </div>
       </div>
-
-      <p className="info">[Pollutant concentration in μg/m³]</p>
+      <p className="info">
+        [Pollutant concentration in μg/m³]
+        <div className="temp-out">
+          <img src={temp} alt="temp" />
+          <p>{props.temp}° C</p>
+        </div>
+      </p>
     </div>
   );
 }
