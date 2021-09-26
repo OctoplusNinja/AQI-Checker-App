@@ -1,9 +1,10 @@
 .bd {
 	padding-bottom: 120px;
+	/* border: solid slateblue 1px; */
 }
 
 .bullet {
-	width: 929px;
+	width: 930px;
 	height: auto;
 	display: flex;
 	flex-direction: row;
@@ -11,6 +12,7 @@
 	justify-content: space-between;
 	flex-wrap: wrap;
 	position: relative;
+	/* border: solid slateblue 1px; */
 }
 
 /* div.bullet > div {
@@ -55,15 +57,43 @@ div.right {
 	left: 50%;
 	-ms-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
+	text-transform: uppercase;
 }
 
-.temp > img {
+.temp-out {
+	display: none;
+}
+
+.temp > img,
+.temp-out > img {
 	width: 100px;
 	height: 100px;
 }
 
-.temp > p {
+.temp > p,
+.temp-out > p {
 	font-weight: 800;
 	font-size: 40px;
 	line-height: 60px;
+}
+
+@media only screen and (max-width: 940px) {
+	.bullet {
+		width: 800px;
+	}
+	.temp {
+		display: none;
+	}
+	.temp-out {
+		display: block;
+		margin: 20px auto;
+		text-transform: uppercase;
+	}
+}
+
+@media only screen and (max-width: 810px) {
+	.bullet {
+		width: 375px;
+		justify-content: center;
+	}
 }
