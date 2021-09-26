@@ -7,7 +7,7 @@ const BaseURL = "http://api.openweathermap.org/data/2.5";
 const API_KEY = process.env.REACT_APP_WEATHER_API_KEY;
 
 function Search() {
-	const [city, setCity] = useState("Siliguri");
+	const [city, setCity] = useState("");
 	const [Pval, setPVal] = useState("");
 	const [Wval, setWval] = useState("");
 	const [okay, setOkay] = useState(false);
@@ -52,12 +52,14 @@ function Search() {
 				setOkay(false);
 			});
 		console.log(city);
+		setCity("");
 	}
 	return (
 		<div className="sexrch">
 			<form className="search" onSubmit={getLocation}>
 				<div>
 					<input
+						placeholder="enter your location..."
 						className="searchbox"
 						type="text"
 						value={city}
@@ -70,7 +72,6 @@ function Search() {
 						className="sub-btn"
 					></button>
 				</div>
-				<p className="loc">or let us know your location!</p>
 			</form>
 			<Details className="Details" okay={okay} Pval={Pval} Wval={Wval} />
 		</div>

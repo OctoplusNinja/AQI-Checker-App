@@ -41,10 +41,11 @@ div.sexrch {
 	border-radius: 0px 50px 50px 0px;
 }
 
-.loc {
-	font-weight: 600;
-	font-size: 15px;
-	margin: 10px 0 27px;
-	text-decoration-line: underline;
-	color: #eee69e;
+@media only screen and (max-width: 500px) {
+	.searchbox {
+		width: 300px;
+	}
+	.sub-btn {
+		left: 350px;
+	}
 }
