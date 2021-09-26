@@ -1,4 +1,6 @@
+import Bullet from "../Bullet/Bullet";
 import AQIData from "./Data";
+import Advice from "../Advice/Advice";
 
 function Details(props) {
   //   return <div>{props.val}</div>;
@@ -8,6 +10,7 @@ function Details(props) {
       <div className="details">
         <p>City Not Found</p>
         <img src={AQIData.err.image} alt="" width="100px" />
+        <Advice okay={props.okay} />
       </div>
     );
   } else {
@@ -20,6 +23,8 @@ function Details(props) {
         <img src={AQIData.main[AQIIndex].image} alt="" width="100px" />
         <p>Air Quality Index:</p>
         <p>{AQIData.main[AQIIndex].AQI}</p>
+        <Bullet Pval={props.Pval} temp={props.Wval.main.temp} />
+        <Advice okay={props.okay} AQIIndex={AQIIndex} />
       </div>
     );
   }
